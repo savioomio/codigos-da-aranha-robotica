@@ -21,7 +21,6 @@ void setup() {
   servo_frente_esquerda.attach(6);
   levanta_frente_esquerda.attach(7);
 
-  
   //movimentação para posição inicial de cada servo
 
   //posições iniciais dos servos 8/9/2/3
@@ -38,7 +37,6 @@ void setup() {
   servo_tras_esquerda.write(90);
   levanta_tras_esquerda.write(20);
   delay(1500);
-
 
 for (int i=0; i<5; i++){
   
