@@ -2,7 +2,7 @@
 #include <Servo.h>
 
 // Pinos de comunicação com o módulo Bluetooth HC-06
-SoftwareSerial bluetooth(10, 11);
+SoftwareSerial bluetooth(2, 3);
 
 // Definição dos servos
 Servo servo_frente_direita;
@@ -21,8 +21,8 @@ void setup() {
   // Ativação dos servos motores
   servo_frente_direita.attach(8);
   levanta_frente_direita.attach(9);
-  servo_tras_direita.attach(2);
-  levanta_tras_direita.attach(3);
+  servo_tras_direita.attach(12);
+  levanta_tras_direita.attach(13);
   servo_tras_esquerda.attach(4);
   levanta_tras_esquerda.attach(5);
   servo_frente_esquerda.attach(6);
@@ -41,6 +41,15 @@ void setup() {
   servo_tras_esquerda.write(90);
   levanta_tras_esquerda.write(20);
   delay(1500);
+
+  servo_frente_direita.attach(8);
+  levanta_frente_direita.attach(9);
+  servo_tras_direita.attach(12);
+  levanta_tras_direita.attach(13);
+  servo_tras_esquerda.attach(4);
+  levanta_tras_esquerda.attach(5);
+  servo_frente_esquerda.attach(6);
+  levanta_frente_esquerda.attach(7);
 }
 
 void loop() {
@@ -53,10 +62,10 @@ void loop() {
       case 'F':
         andar();
         break;
-      case 'D':
+      case 'L':
         dancar();
         break;
-      case 'P':
+      case 'R':
         darPata();
         break;
       // Adicione mais casos para outros comandos, se necessário

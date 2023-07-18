@@ -14,8 +14,8 @@ void setup() {
   //ativação dos servos motores
   servo_horizontal_frente_direita.attach(8);
   servo_vertical_frente_direita.attach(9);
-  servo_horizontal_tras_direita.attach(2);
-  servo_vertical_tras_direita.attach(3);
+  servo_horizontal_tras_direita.attach(12);
+  servo_vertical_tras_direita.attach(13);
   servo_horizontal_tras_esquerda.attach(4);
   servo_vertical_tras_esquerda.attach(5);
   servo_horizontal_frente_esquerda.attach(6);
